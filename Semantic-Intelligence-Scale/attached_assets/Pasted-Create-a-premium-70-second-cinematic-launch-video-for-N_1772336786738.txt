@@ -1,0 +1,51 @@
+Create a premium 70-second cinematic launch video for "Nouits AI", a semantic intelligence platform for digital reputation management. The visual style should follow Google's product launch aesthetic: clean white backgrounds, generous negative space, bold centered typography, and vibrant accent colors used sparingly for "magical" AI moments.
+
+BRAND IDENTITY:
+- Primary background: Pure white #FFFFFF and soft white #F8F9FA
+- Text colors: Dark #202124 for headlines, Medium gray #5F6368 for body
+- Brand accent: Nouits Indigo #6F6BFF (used for AI moments, glows, accents)
+- Secondary accent: Periwinkle #9FA8FF and Soft Indigo #E8E7FF (backgrounds for pills/badges)
+- UI borders: Light gray #E8EAED
+- Typography: Clean modern sans-serif, bold for headlines with generous letter-spacing, light for body. Think Google Sans aesthetic.
+- Brand name: "nouits" (always lowercase)
+- Tagline: "Semantic Intelligence at scale."
+- Aesthetic: Google Gemini product launch meets premium SaaS. White, clean, human-centric, empowering. No dark themes, no cyberpunk, no startup-playful aesthetics.
+
+SCENE STRUCTURE:
+
+SCENE 1 (0-12s) "THE QUESTION":
+Pure white background. Bold centered typography in #202124 fades in one phrase at a time with gentle translateY animation. A blinking cursor in #6F6BFF appears before each phrase like a conversational AI input. Text sequence: "Your customers are talking about you." (pause 1.5s) "Right now." (pause 1.5s) "Do you know what they're really saying?" Very subtle #E8E7FF particles float slowly in background, barely visible. Minimal, typographic, clean.
+
+SCENE 2 (12-25s) "THE ANSWER":
+On white background, the Nouits logo materializes at center from #6F6BFF particles converging. Below, tagline types out: "Semantic Intelligence at scale." Then 5 horizontal pills appear with staggered timing (150ms delay each), each with #E8E7FF background and #6F6BFF text: "Sentiment", "Emotion", "Topics", "Driver", "Intent". A subtle curved line connects all 5. Each pill gets a brief #6F6BFF glow on appearance. Headline below: "5 dimensions of understanding." Subtle radial gradient from center white to #F8F9FA at edges.
+
+SCENE 3 (25-48s) "THE PLATFORM":
+Three showcase segments on #F8F9FA background using clean white cards with border-radius 16px and very subtle shadows:
+
+(25-33s) MONITORING: Stack of 3-4 abstracted social post cards, each with avatar circle, blurred text snippet, and color-coded tags popping in: "Positive" in green #34A853, "Joy" in indigo #6F6BFF, "Human" in gray #E8EAED. Mini sentiment gauge fills on the right. Headline: "Know what they feel. In real time."
+
+(33-40s) COMPETITORS: Clean table/leaderboard with 4 rows. "Your Brand" row highlighted with #E8E7FF background. Horizontal bars animate filling. Alert badge pulses in #6F6BFF: "Opportunity detected". Headline: "See what your competitors can't."
+
+(40-48s) AI REPORTS: Large centered card with typewriter text generating a report. Key insights highlighted in #E8E7FF. Two Google-style outlined buttons: "Export PDF", "Export CSV" with border-radius 20px. Small sparkle icon ✦ next to title. Headline: "From noise to boardroom-ready. Instantly."
+
+Cross-dissolve transitions between sub-scenes (400ms).
+
+SCENE 4 (48-55s) "THE SOURCES":
+Pure white background. Nouits isotipo centered in #6F6BFF. Six platform icons appear in semicircle with stagger: X, Instagram, Facebook, Reddit, Google Reviews, Forums. Each icon in #5F6368 gray, briefly flashes #6F6BFF on appearance. Thin dotted lines connect each to center. Micro-particles travel along lines toward center. Text: "We listen where people actually speak." Clean infographic style.
+
+SCENE 5 (55-65s) "BRAND REVEAL":
+Everything dissolves to pure #FFFFFF. 1 second of pure white silence. The Nouits isotipo draws itself with animated stroke in #6F6BFF at center. Below, "nouits" fades in with #202124 and generous tracking. Then tagline: "Semantic Intelligence at scale." A circular halo of #E8E7FF expands gently from the logo like a ripple. Minimal #9FA8FF particles float very slowly. Maximum negative space. Maximum elegance. This is the emotional peak.
+
+SCENE 6 (65-70s) "CALL TO ACTION":
+Clean white background. Nouits logo centered and static in #6F6BFF. Below, a button-style CTA: "Book a demo" with #6F6BFF background, white text, border-radius 24px, subtle shadow. Below: "www.nouits.ai" in #5F6368. At bottom, small text in #9AA0A6: "Founded by Tec de Monterrey alumni · Querétaro, Mexico". Subtle particle movement continues.
+
+ANIMATION STYLE:
+- Easing: cubic-bezier(0.4, 0.0, 0.2, 1) for all transitions — Material Design standard
+- Staggered reveals with 100-150ms delays
+- Most appearances use opacity 0→1 with translateY(12px→0)
+- Glow effects: #6F6BFF with blur 30px, used sparingly for "AI magic" moments
+- Cards: border-radius 16px, box-shadow 0 1px 3px rgba(0,0,0,0.08)
+- Pills/badges: border-radius 999px, background #E8E7FF, text #6F6BFF
+- Professional, clean pacing — snappy but not rushed
+- No bouncy animations, no dark backgrounds, no dense particle systems
+- Every frame should feel like a Google product launch slide

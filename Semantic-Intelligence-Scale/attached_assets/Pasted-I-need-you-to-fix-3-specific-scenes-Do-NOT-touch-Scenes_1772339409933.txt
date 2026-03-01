@@ -1,0 +1,121 @@
+I need you to fix 3 specific scenes. Do NOT touch Scenes 4, 5, or 6 — leave them exactly as they are. Only modify Scenes 1, 2, and the Monitoring sub-scene in Scene 3.
+
+=== FIX 1: SCENE 1 — RESTORE FLOATING BACKGROUND WORDS ===
+
+The previous version had subtle floating words drifting slowly across the background behind the main headline. These words created atmosphere and represented "internet noise." They were removed and I need them back.
+
+Add these floating background words scattered across the entire screen:
+- Words to use: "insight", "pulse", "opinion", "review", "comment", "feedback", "complaint", "praise", "trending", "viral", "brand", "reputation", "sentiment", "emotion", "trust", "anger", "joy", "frustration", "loyalty", "churn"
+- Each word: font-size between 14px and 22px (vary randomly), color #D1D5DB (light gray, subtle but visible), font-weight 300, opacity between 0.3 and 0.5
+- Position: scattered randomly across the full screen area, at different X and Y positions
+- Animation: each word drifts slowly in a random direction (some float upward, some diagonal, some sideways) at approximately 15-30px per second. Each word also gently pulses opacity between its base opacity and +0.15 on a 3-5 second loop.
+- There should be approximately 20-25 words visible at any time, creating a field of "conversation noise" behind the main headline
+- The main headline ("Millions of conversations happen every day" and "But what are they really saying?") must remain fully readable ON TOP of these floating words — the floating words are background decoration only, they go behind the headline text with a lower z-index
+- The floating words should be visible from 0s to 12s (the entire Scene 1 duration) and then fade out during the transition to Scene 2
+
+This is critical for setting the mood. Without these words, Scene 1 feels empty and lifeless.
+
+=== FIX 2: SCENE 2 — REPLACE PENTAGON WITH HORIZONTAL PILL LAYOUT ===
+
+The pentagon visualization has overlapping text problems and looks cluttered. Remove it entirely. Replace with this cleaner layout:
+
+New layout for Scene 2:
+
+TOP SECTION (vertically centered, upper third of screen):
+- The Nouits isotipo (uploaded logo image) centered, approximately 60x60px, in #6F6BFF
+- Below the logo (16px gap): "nouits" wordmark text or uploaded image, centered
+
+MIDDLE SECTION (center of screen):
+- Main headline: "Semantic Intelligence" in BLACK #202124, font-size 56px, font-weight 700, centered
+- Below (8px gap): "in 5 Dimensions" in #5F6368, font-size 22px, font-weight 400, centered
+
+BOTTOM SECTION (below headline, 40px gap):
+- A horizontal row of 5 pill-shaped badges, centered on screen, with 16px gaps between each pill
+- Each pill: background #F3F2FF (very light indigo), border: 1.5px solid #6F6BFF, border-radius: 999px, padding: 10px 24px
+- Inside each pill: a small icon (20x20px, color #6F6BFF) on the left, then the dimension name in BLACK #202124, font-size 15px, font-weight 600
+- The 5 pills in order, left to right:
+  1. ♡ heart icon → "Sentiment"
+  2. ⚡ pulse icon → "Emotion"
+  3. # hash icon → "Topics"
+  4. ◎ target icon → "Driver"
+  5. 👥 people icon → "Intent"
+
+Animation sequence:
+1. (12-14s) Nouits logo fades in at top with subtle glow
+2. (14-16s) "Semantic Intelligence" headline fades in (opacity 0→1, translateY(20px→0), 600ms)
+3. (16-17s) "in 5 Dimensions" subtitle fades in
+4. (17-20s) The 5 pills appear one by one from left to right, each with 200ms stagger delay. Each pill enters with: opacity 0→1, translateY(15px→0), and a brief flash of #6F6BFF glow behind it (blur 15px, opacity 0.3, fades after 300ms)
+5. (20-22s) All pills are visible. A subtle connecting line draws itself horizontally behind all 5 pills — a thin 1px line in #E8EAED connecting them, giving a sense of unity
+6. (22-25s) Hold for the viewer to absorb, then everything fades out for Scene 3
+
+This layout is IMPOSSIBLE to have overlap issues because everything is stacked vertically with clear spacing. No crossing lines, no pentagon, no clutter.
+
+=== FIX 3: SCENE 3A (MONITORING) — REDESIGN AS SCROLLING TWEET FEED ===
+
+The current monitoring mockup does not match the Nouits website. Replace it with a scrolling feed of social posts that matches the exact UI from nouits.ai.
+
+Remove the current card with progress bars. Replace with:
+
+LEFT SIDE (55% width) — A "browser window" container:
+- Container: background #FFFFFF, border: 1px solid #E8EAED, border-radius: 12px, overflow hidden
+- Top bar: a thin bar (36px height) with background #F8F9FA, showing 3 dots (red #FF5F56, yellow #FFBD2E, green #27C93F, each 10px circles) in the top-left corner — mimicking a macOS window chrome
+- Below the top bar: a scrollable feed area with the following 5 post cards stacked vertically, each separated by a 1px line in #F0F0F0:
+
+POST 1:
+- Avatar: circle 36px, background #6F6BFF, white initials "JD"
+- Username: "@john_doe" in #202124 font-weight 600, size 14px
+- Timestamp: "2m ago" in #9AA0A6, right-aligned
+- Text: "The new update is absolutely fantastic! Finally resolved the sync issues." in #202124, size 14px
+- Tags row (below text, 8px gap): 4 pill badges inline:
+  * "POSITIVE" — background #E6F4EA, text #137333, border: 1px solid #A8DAB5
+  * "JOY" — background #E8E7FF, text #6F6BFF, border: 1px solid #B8B6FF  
+  * "PRODUCT" — background #F1F3F4, text #5F6368, border: 1px solid #DADCE0
+  * "HUMAN" — background #F1F3F4, text #5F6368, border: 1px solid #DADCE0
+- Each tag: font-size 11px, font-weight 600, uppercase, border-radius: 4px, padding: 3px 10px
+
+POST 2:
+- Avatar: circle 36px, background #EA4335 (red), white initials "SA"
+- Username: "@sarah_a" — Timestamp: "15m ago"
+- Text: "I've been waiting for support for 3 days. This is ridiculous."
+- Tags: "NEGATIVE" (bg #FCE8E6, text #C5221F, border #F5B7B1), "FRUSTRATION" (bg #FCE8E6, text #C5221F, border #F5B7B1), "SUPPORT" (bg #F1F3F4, text #5F6368), "BOT" (bg #FEF7E0, text #B05E0D, border #F9D67A)
+
+POST 3:
+- Avatar: circle 36px, background #34A853 (green), white initials "MR"
+- Username: "@mike_r" — Timestamp: "1h ago"
+- Text: "Just checking out the new features. Looks promising but confusing."
+- Tags: "NEUTRAL" (bg #F1F3F4, text #5F6368), "CURIOSITY" (bg #E8E7FF, text #6F6BFF), "UX" (bg #F1F3F4, text #5F6368), "HUMAN" (bg #F1F3F4, text #5F6368)
+
+POST 4:
+- Avatar: circle 36px, background #FBBC04 (yellow), white text "B42"
+- Username: "@promo_bot" — Timestamp: "2h ago"  
+- Text: "Get 50% discount on all plans! Limited time offer click here."
+- Tags: "NEUTRAL" (bg #F1F3F4, text #5F6368), "SPAM" (bg #F1F3F4, text #5F6368), "PROMO" (bg #FEF7E0, text #B05E0D), "BOT" (bg #FEF7E0, text #B05E0D, border #F9D67A)
+
+POST 5:
+- Avatar: circle 36px, background #9FA8FF, white initials "EL"
+- Username: "@elena_l" — Timestamp: "3h ago"
+- Text: "I was hesitant at first, but the team showed me how it works. Incredible."
+- Tags: "POSITIVE" (bg #E6F4EA, text #137333), "TRUST" (bg #E8E7FF, text #6F6BFF), "SERVICE" (bg #F1F3F4, text #5F6368), "HUMAN" (bg #F1F3F4, text #5F6368)
+
+SCROLL ANIMATION:
+- The container initially shows Posts 1 and 2 fully, with Post 3 partially visible at the bottom
+- During the scene (25-33s), the feed smoothly auto-scrolls downward to reveal Posts 3, 4, and 5
+- Scroll speed: slow and cinematic, approximately 60px per second
+- The scroll should feel like someone is naturally reading through the feed
+- Tags on each post should pop in with a quick stagger (50ms each) as the post scrolls into view — this is the "AI tagging in real time" effect
+
+RIGHT SIDE (45% width) — Same as before:
+- Small accent line: 30px wide, 3px tall, #6F6BFF
+- Headline: "Real-time Monitoring" in BLACK #202124, font-size 32px, font-weight 700  
+- Body: "Track brand health across every channel with instant alerts." in #5F6368, font-size 16px
+- This text is vertically centered relative to the left container
+
+Do NOT change the other Scene 3 sub-scenes (Competitors, Exploration, AI Analyst) — only fix the Monitoring sub-scene.
+
+=== IMPORTANT REMINDERS ===
+
+- Do NOT modify Scenes 4, 5, or 6
+- Do NOT modify Scene 3B (Competitors), 3C (Exploration), or 3D (AI Analyst)
+- Only touch: Scene 1 (add floating words), Scene 2 (replace pentagon with pills), Scene 3A (redesign monitoring as scrolling feed)
+- All text that a viewer needs to read must be BLACK #202124 or dark gray #5F6368 on white
+- The accent color #6F6BFF is only for icons, tag borders, highlight words, and the Nouits logo

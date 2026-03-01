@@ -1,0 +1,239 @@
+I need you to completely rebuild this video fixing critical issues. The current version has severe visibility problems, layout overlaps, and disconnected elements. Here is the corrected, detailed specification. Follow it precisely.
+
+=== GLOBAL RULES (APPLY TO EVERY SCENE) ===
+
+CONTRAST AND READABILITY — THIS IS THE #1 PRIORITY:
+- Background: pure white #FFFFFF everywhere
+- ALL headline text: solid black #202124, font-weight 700, large size (minimum 48px equivalent)
+- ALL body text: dark gray #5F6368, font-weight 400
+- The brand accent color #6F6BFF (indigo/purple) is ONLY used for:
+  * Small highlight words within headlines (1-2 words max per headline)
+  * Icon fills or strokes
+  * The thin accent line above feature titles
+  * Progress bars and active indicators
+  * The Nouits logo
+- NEVER use #6F6BFF, #9FA8FF, #C6CCFF, or any light purple as the main text color. Headlines must be BLACK.
+- NEVER use white or near-white text on white backgrounds
+- Every element must pass a contrast check: if you squint and can't read it, it's too light
+
+LAYOUT RULES:
+- No text may overlap with icons, images, or other text. Maintain minimum 40px spacing between all elements.
+- All connection lines must visually connect from point A to point B with no gaps.
+- Center-align all headlines. Left-align body text only inside cards.
+- Cards use: background #FFFFFF, border: 1px solid #E8EAED, border-radius: 16px, box-shadow: 0 2px 8px rgba(0,0,0,0.06)
+
+LOGO USAGE:
+- The Nouits logo (the fluid wave/infinity shape) and "nouits" wordmark are provided as uploaded PNG files in this project. Use them directly — do NOT create placeholder text or write "AI" as a substitute. Always reference the actual uploaded logo image files.
+
+=== SCENE 1 (0-12s) — "THE QUESTION" ===
+
+Purpose: Hook the viewer with a provocative question. Typographic scene.
+
+Visual layout:
+- Pure white #FFFFFF background, completely clean
+- Small label at top center: "INSIGHT" in uppercase, #9FA8FF, font-size 12px, letter-spacing 3px — this is the ONLY light-colored text allowed
+- Main headline centered vertically and horizontally, font-size 64px, font-weight 700
+
+Animation sequence:
+1. (0-3s) Text fades in: "Millions of conversations happen" in solid BLACK #202124, with "every day" in #6F6BFF. The fade uses opacity 0→1 plus translateY(30px→0) over 800ms with cubic-bezier(0.4, 0, 0.2, 1)
+2. (3-5s) Hold for 2 seconds so viewer can read
+3. (5-7s) Text crossfades to: "But what are they" in BLACK, "really saying?" in #6F6BFF. Same animation style.
+4. (7-9s) Hold for 2 seconds
+5. (9-12s) Text fades out and scales down slightly (scale 1→0.95, opacity 1→0), preparing transition to Scene 2
+
+Background: 8-12 very subtle dots (3px circles) in #E8E7FF floating with slow random drift. These are decorative only and must NOT interfere with text readability.
+
+Key: The text must be FULLY LEGIBLE. Black on white. Only accent words in purple.
+
+=== SCENE 2 (12-25s) — "SEMANTIC INTELLIGENCE" ===
+
+Purpose: Introduce the 5 dimensions of Nouits intelligence. The "aha" moment.
+
+Visual layout:
+- White background #FFFFFF
+- Center of screen: the uploaded Nouits logo (the wave/infinity isotipo), displayed at roughly 80x80px, in #6F6BFF
+- Around the logo, 5 icon nodes arranged in a PENTAGON formation, evenly spaced, at roughly 200px radius from center
+- Each node: white circle (60px diameter) with 2px solid border in #6F6BFF, containing a simple line icon in #6F6BFF inside:
+  * Top: Heart icon → "Sentiment"
+  * Top-right: Pulse/wave icon → "Emotion"  
+  * Bottom-right: Hash/tag icon → "Topics"
+  * Bottom-left: Target/crosshair icon → "Driver"
+  * Left: People/group icon → "Intent"
+- Lines connecting ALL five nodes to each other (a complete pentagon with inner star lines), using 1px solid #D1D5DB (light gray), clearly visible
+- Below each icon node: the dimension name in BLACK #202124, font-size 14px, font-weight 600
+
+Center text (overlaid on the logo area, below the isotipo):
+- "Semantic Intelligence" in BLACK #202124, font-size 48px, font-weight 700
+- "in 5 Dimensions" below in #5F6368, font-size 20px, font-weight 400
+
+Animation sequence:
+1. (12-14s) The Nouits logo fades in at center with a soft #6F6BFF glow (blur 20px, opacity 30%) that pulses once
+2. (14-17s) The 5 icon nodes materialize one by one clockwise, each with 200ms delay. Each appears with scale(0.5→1) + opacity(0→1) and a brief glow flash
+3. (17-19s) The connecting lines draw themselves progressively (stroke-dasharray animation), forming the pentagon and star pattern
+4. (19-21s) Dimension labels fade in below each icon with 150ms stagger
+5. (21-23s) Center headline "Semantic Intelligence" fades in
+6. (23-25s) Subtitle "in 5 Dimensions" fades in
+
+CRITICAL: The icon borders must be clearly visible (2px solid #6F6BFF, not 1px light purple). The labels must be BLACK not purple. The connecting lines must reach every node with no gaps.
+
+=== SCENE 3 (25-50s) — "THE PLATFORM" ===
+
+THIS IS THE MOST IMPORTANT SCENE. It must showcase 4 features matching the design language of www.nouits.ai exactly. I have uploaded reference screenshots from the Nouits website showing the UI design for each feature. Use these screenshots as the direct visual reference.
+
+General layout for each feature sub-scene:
+- Background: #F8F9FA (soft gray-white)
+- Left side (55% width): A UI mockup card/container matching the Nouits website style
+- Right side (45% width): Feature title with a short #6F6BFF accent line above it, bold BLACK headline, and gray body text below
+- The UI containers should have: white background, subtle border #E8EAED, border-radius 16px, realistic but simplified content inside
+
+--- SUB-SCENE 3A: MONITORING (25-31s) ---
+
+Left side UI mockup (match nouits.ai Monitoring section):
+- A card showing simulated social media posts with sentiment tags
+- Each post row has: a small colored avatar circle, a blurred text line (gray bar), and TAG BADGES on the right
+- Tag badges with visible borders: "POSITIVE" (green outlined badge), "JOY" (purple outlined badge), "HUMAN" (gray outlined badge)
+- Below each set of tags: a progress/percentage bar in #6F6BFF filling to different levels (e.g., 94%, 72%, 85%)
+- The percentage numbers must be clearly visible in BLACK text, not hidden or purple
+
+Right side text:
+- Small accent line: 30px wide, 3px tall, #6F6BFF
+- Headline: "Real-time Monitoring" in BLACK #202124, font-size 32px, font-weight 700
+- Body: "Track brand health across every channel with instant alerts." in #5F6368, font-size 16px
+
+Animation: Card slides in from left (translateX(-60px→0), opacity 0→1, 600ms). Tags pop in with 150ms stagger. Progress bars fill with smooth animation. Title and text fade in from right with 200ms delay after card.
+
+--- SUB-SCENE 3B: COMPETITORS (31-37s) ---
+
+Left side UI mockup (match nouits.ai Competitor Mapping section):
+- A table/comparison card showing competitor rows
+- Table with columns: Brand, Sentiment (colored indicator), Driver, Emotion, Share of Voice
+- Row 1 "Nouits (You)" highlighted with light #E8E7FF background, showing positive indicators
+- Rows 2-4: "Competitor X", "Competitor Y", "Competitor Z" with varying sentiment indicators
+- Share of Voice column shows percentage bars — Nouits has the longest bar
+- Clean table borders in #E8EAED
+
+Right side text:
+- Accent line in #6F6BFF
+- Headline: "Competitor Mapping" in BLACK
+- Body: "Reveal competitor weaknesses. Capitalize on their dissatisfied customers." in #5F6368
+
+Animation: Table rows appear one by one from top (200ms stagger). Percentage bars fill. An alert badge slides in: "Opportunity detected" with #6F6BFF background, white text, border-radius 20px, with a gentle pulse.
+
+--- SUB-SCENE 3C: EXPLORATION (37-43s) ---
+
+Left side UI mockup (match nouits.ai Deep Keyword Exploration section):
+- A search-bar style input at top with a keyword like "Electric Vehicle" inside, with an X close button
+- Below: a cluster/bubble layout showing related topics as rounded pills/tags:
+  * "Charging" — Neutral 48% (gray indicator)
+  * "Battery Life" — Neg 62% (red/orange indicator)  
+  * "Speed" — Pos 89% (green indicator)
+  * "Range" — Neg 55%
+  * "Price" — Neg 71%
+  * "Design" — Pos 78%
+  * "Safety" — Pos 83%
+- Each tag has visible text in BLACK, a small colored sentiment indicator, and percentage in #5F6368
+- Arranged in an organic scatter or grid pattern
+
+Right side text:
+- Accent line in #6F6BFF
+- Headline: "Deep Exploration" in BLACK
+- Body: "Type any keyword. Uncover the conversation ecosystem around it." in #5F6368
+
+Animation: Search bar types in "Electric Vehicle" with typewriter effect and cursor. Then topic bubbles pop in one by one from center outward with scale animation. Sentiment colors fill in.
+
+--- SUB-SCENE 3D: AI ANALYST (43-50s) ---
+
+Left side UI mockup (match nouits.ai AI Analyst section):
+- A report/document card styled like the Nouits website
+- Title bar: "Q3 Competitor Pulse Report" in bold BLACK
+- Section header: "Executive Summary" with a horizontal rule
+- 2-3 lines of simulated text (gray bars, one line has a highlighted span in #E8E7FF showing a key insight)
+- Section: "Key Opportunities" with numbered items (1, 2, 3) as gray text bars
+- Bottom: two buttons side by side — "Download PDF" and "Export CSV" with outlined style (border #6F6BFF, text #6F6BFF, border-radius 8px)
+
+Right side text:
+- Accent line in #6F6BFF
+- Headline: "AI Analyst" in BLACK
+- Body: "Executive summaries generated automatically. Export raw data in one click." in #5F6368
+
+Animation: Report card fades in. Text lines appear sequentially with typewriter-style reveal (200ms per line). Highlight spans glow briefly in #E8E7FF. Buttons fade in last with a subtle scale(0.95→1) effect.
+
+TRANSITIONS BETWEEN FEATURES: Use a horizontal slide transition (current card slides left and fades out while new card slides in from right) — 400ms duration. This creates a carousel feel that is dynamic and narrative-driven, not static.
+
+=== SCENE 4 (50-57s) — "THE SOURCES" ===
+
+Purpose: Show multi-platform coverage. Must be clean, connected, and properly laid out.
+
+Visual layout:
+- White background #FFFFFF
+- CENTER: The uploaded Nouits logo (isotipo) displayed as the actual PNG image, approximately 80x80px, with a subtle circular glow halo in #E8E7FF behind it
+- AROUND the logo: 6 platform icons arranged in a CIRCLE at ~180px radius, evenly spaced (60° apart)
+- Each icon: dark rounded square (40x40px, border-radius 10px, background #2D3142) containing a white line icon:
+  * Google Reviews (star icon)
+  * Forums (speech bubble icon)
+  * Instagram (camera icon)
+  * Twitter/X (bird icon)
+  * Facebook (F icon)
+  * Reddit (circle icon)
+- Each icon is connected to the center logo with a SOLID LINE (1.5px, #6F6BFF at 60% opacity). Lines must clearly start from the icon edge and end at the center circle edge — NO GAPS.
+
+Below the entire diagram (with 60px of spacing, NO OVERLAP):
+- "Listen where people" in BLACK #202124, font-size 40px, font-weight 700
+- "actually speak." in #6F6BFF, same size
+- This text must be BELOW all icons, not overlapping with any element
+
+Animation sequence:
+1. (50-52s) Center Nouits logo fades in with glow pulse
+2. (52-55s) Platform icons materialize one by one clockwise (300ms each, 200ms stagger). Each appears with scale(0→1) + opacity(0→1). As each appears, its connecting line draws from center outward (stroke animation)
+3. (55-57s) Micro-particles (small dots in #6F6BFF) travel along the lines from each icon toward the center, showing data flow. Headline text fades in below.
+
+CRITICAL FIXES from current version:
+- The center must show the ACTUAL UPLOADED Nouits logo, not a circle with "AI" text
+- ALL 6 lines must connect properly — no floating/disconnected lines
+- Text MUST be below the diagram with clear spacing, NOT overlapping icons
+- Icons should be clearly visible (dark background squares), not invisible light circles
+
+=== SCENE 5 (57-65s) — "BRAND REVEAL" ===
+
+Purpose: Emotional peak. Maximum elegance.
+
+Animation sequence:
+1. (57-58s) Everything from Scene 4 fades out to pure white
+2. (58-59s) 1.5 seconds of pure white. Let it breathe.
+3. (59-62s) The Nouits isotipo (uploaded PNG) appears at center with a smooth scale(0.8→1) + opacity(0→1) animation, 1000ms. A circular halo of #E8E7FF expands outward from the logo (scale 0→3, opacity 0.4→0).
+4. (62-63s) Below the isotipo, "nouits" wordmark fades in — use the uploaded PNG wordmark image, centered. If not available as image, render "nouits" in lowercase, #202124, font-size 48px, font-weight 600, letter-spacing 8px
+5. (63-65s) Tagline fades in below: "Semantic Intelligence at scale." in #5F6368, font-size 20px, font-weight 400
+
+The logo and wordmark must be BLACK/dark on white. The only color is the brief #E8E7FF halo expansion. This scene is about silence, space, and impact.
+
+=== SCENE 6 (65-72s) — "CALL TO ACTION" ===
+
+Visual layout:
+- White background
+- Nouits logo + wordmark centered (same as end of Scene 5, static)
+- Below: "Book a demo" button — background #6F6BFF, text white #FFFFFF, font-size 18px, font-weight 600, padding 14px 40px, border-radius 24px, box-shadow: 0 2px 8px rgba(111,107,255,0.3)
+- Below button: "www.nouits.ai" in #6F6BFF, font-size 16px, underlined
+- Bottom of screen: "Founded by Tec de Monterrey alumni · Querétaro, Mexico" in #9AA0A6, font-size 12px
+
+Animation: Button fades in with scale(0.9→1), 500ms. URL fades in 300ms later. Footer text fades in 300ms after that. The button has a very subtle hover-like pulse (scale 1→1.02→1 loop, 2s duration) to draw attention.
+
+=== ANIMATION GLOBAL SETTINGS ===
+
+- Easing for all transitions: cubic-bezier(0.4, 0.0, 0.2, 1)
+- No linear easing ever
+- No bouncy/elastic animations
+- Stagger delays: 100-200ms between sequential elements
+- Scene transitions: crossfade 500ms
+- Total video duration: approximately 70-72 seconds
+- Background: white #FFFFFF throughout (except #F8F9FA in Scene 3)
+- No dark backgrounds in any scene
+- The video should feel like a Google Gemini product launch: clean, confident, purposeful, with every animation serving the narrative
+
+=== ASSET REFERENCES ===
+
+Use the uploaded image files in this project:
+- Nouits logo (white version — the wave/infinity isotipo): use this wherever the logo is needed, apply color tinting if needed to show in #6F6BFF or dark
+- Nouits wordmark ("nouits" text)
+- Website screenshots from nouits.ai: use these as direct visual reference for the UI mockups in Scene 3. Match the card styles, badge styles, table layouts, and overall design language shown in these screenshots
+
+Do NOT create generic placeholder UI. The Scene 3 mockups must look like they belong on the Nouits website.

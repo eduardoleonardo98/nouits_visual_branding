@@ -1,0 +1,53 @@
+--- SUB-SCENE 3B: COMPETITORS (31-37s) ---
+
+Left side UI mockup (match nouits.ai Competitor Mapping section):
+- A table/comparison card showing competitor rows
+- Table with columns: Brand, Sentiment (colored indicator), Driver, Emotion, Share of Voice
+- Row 1 "Nouits (You)" highlighted with light #E8E7FF background, showing positive indicators
+- Rows 2-4: "Competitor X", "Competitor Y", "Competitor Z" with varying sentiment indicators
+- Share of Voice column shows percentage bars — Nouits has the longest bar
+- Clean table borders in #E8EAED
+
+Right side text:
+- Accent line in #6F6BFF
+- Headline: "Competitor Mapping" in BLACK
+- Body: "Reveal competitor weaknesses. Capitalize on their dissatisfied customers." in #5F6368
+
+Animation: Table rows appear one by one from top (200ms stagger). Percentage bars fill. An alert badge slides in: "Opportunity detected" with #6F6BFF background, white text, border-radius 20px, with a gentle pulse.
+
+--- SUB-SCENE 3C: EXPLORATION (37-43s) ---
+
+Left side UI mockup (match nouits.ai Deep Keyword Exploration section):
+- A search-bar style input at top with a keyword like "Electric Vehicle" inside, with an X close button
+- Below: a cluster/bubble layout showing related topics as rounded pills/tags:
+  * "Charging" — Neutral 48% (gray indicator)
+  * "Battery Life" — Neg 62% (red/orange indicator)  
+  * "Speed" — Pos 89% (green indicator)
+  * "Range" — Neg 55%
+  * "Price" — Neg 71%
+  * "Design" — Pos 78%
+  * "Safety" — Pos 83%
+- Each tag has visible text in BLACK, a small colored sentiment indicator, and percentage in #5F6368
+- Arranged in an organic scatter or grid pattern
+
+Right side text:
+- Accent line in #6F6BFF
+- Headline: "Deep Exploration" in BLACK
+- Body: "Type any keyword. Uncover the conversation ecosystem around it." in #5F6368
+
+Animation: Search bar types in "Electric Vehicle" with typewriter effect and cursor. Then topic bubbles pop in one by one from center outward with scale animation. Sentiment colors fill in.
+
+--- SUB-SCENE 3D: AI ANALYST (43-50s) ---
+
+Left side UI mockup (match nouits.ai AI Analyst section):
+- A report/document card styled like the Nouits website
+- Title bar: "Q3 Competitor Pulse Report" in bold BLACK
+- Section header: "Executive Summary" with a horizontal rule
+- 2-3 lines of simulated text (gray bars, one line has a highlighted span in #E8E7FF showing a key insight)
+- Section: "Key Opportunities" with numbered items (1, 2, 3) as gray text bars
+- Bottom: two buttons side by side — "Download PDF" and "Export CSV" with outlined style (border #6F6BFF, text #6F6BFF, border-radius 8px)
+
+Right side text:
+- Accent line in #6F6BFF
+- Headline: "AI Analyst" in BLACK
+- Body: "Executive summaries generated automatically. Export raw data in one click." in #5F6368

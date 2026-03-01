@@ -1,0 +1,33 @@
+Animation sequence:
+1. (12-14s) The Nouits logo fades in at center with a soft #6F6BFF glow (blur 20px, opacity 30%) that pulses once
+2. (14-17s) The 5 icon nodes materialize one by one clockwise, each with 200ms delay. Each appears with scale(0.5→1) + opacity(0→1) and a brief glow flash
+3. (17-19s) The connecting lines draw themselves progressively (stroke-dasharray animation), forming the pentagon and star pattern
+4. (19-21s) Dimension labels fade in below each icon with 150ms stagger
+5. (21-23s) Center headline "Semantic Intelligence" fades in
+6. (23-25s) Subtitle "in 5 Dimensions" fades in
+
+CRITICAL: The icon borders must be clearly visible (2px solid #6F6BFF, not 1px light purple). The labels must be BLACK not purple. The connecting lines must reach every node with no gaps.
+
+=== SCENE 3 (25-50s) — "THE PLATFORM" ===
+
+THIS IS THE MOST IMPORTANT SCENE. It must showcase 4 features matching the design language of www.nouits.ai exactly. I have uploaded reference screenshots from the Nouits website showing the UI design for each feature. Use these screenshots as the direct visual reference.
+
+General layout for each feature sub-scene:
+- Background: #F8F9FA (soft gray-white)
+- Left side (55% width): A UI mockup card/container matching the Nouits website style
+- Right side (45% width): Feature title with a short #6F6BFF accent line above it, bold BLACK headline, and gray body text below
+- The UI containers should have: white background, subtle border #E8EAED, border-radius 16px, realistic but simplified content inside
+
+--- SUB-SCENE 3A: MONITORING (25-31s) ---
+
+Left side UI mockup (match nouits.ai Monitoring section):
+- A card showing simulated social media posts with sentiment tags
+- Each post row has: a small colored avatar circle, a blurred text line (gray bar), and TAG BADGES on the right
+- Tag badges with visible borders: "POSITIVE" (green outlined badge), "JOY" (purple outlined badge), "HUMAN" (gray outlined badge)
+- Below each set of tags: a progress/percentage bar in #6F6BFF filling to different levels (e.g., 94%, 72%, 85%)
+- The percentage numbers must be clearly visible in BLACK text, not hidden or purple
+
+Right side text:
+- Small accent line: 30px wide, 3px tall, #6F6BFF
+- Headline: "Real-time Monitoring" in BLACK #202124, font-size 32px, font-weight 700
+- Body: "Track brand health across every channel with instant alerts." in #5F6368, font-size 16px
